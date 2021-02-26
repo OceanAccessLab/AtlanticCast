@@ -1,37 +1,10 @@
-import timeit
-import re
-files = []
-def test1():
-    header = []
-    with open('12506001.p2019', 'r', encoding="utf8", errors='ignore') as td:
-        for line in td:
-            if re.match('-- DATA --', line): # end-of-header            
-                return header
-            else:
-                header.append(line)
-            
+from netCDF4 import Dataset
 
-def time1():
 
-    start = timeit.timeit()
-    header = test1()
-    stop = timeit.timeit()
-    print(header)
-    return stop-start
+rootgrp = Dataset("39185086BINNED.nc", "r")
+# print('data model', rootgrp.data_model)
+# print('groups', rootgrp.groups)
+# print('variables', rootgrp.variables)
+# print('dimensions', rootgrp.dimensions)
+# print(rootgrp.data_model)
 
-def test2():
-    header = []
-    with open('12506001.p2019', 'r', encoding="utf8", errors='ignore') as td:
-        line = td.readline()
-        if '-- DATA --' in line:
-            return header
-        else:
-            header.append(line)
-            print(line)
-
-def time2():
-    start = timeit.timeit()
-    header = test2()
-    stop = timeit.timeit()
-    print(header)
-    return stop-start
