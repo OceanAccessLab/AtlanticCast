@@ -3,6 +3,7 @@ A CFER-DFO project to convert historical Atlantic Coast CTD casts into a NetCDF 
 
 
 # Default behavior
+## By default, the program will create a NetCDF file with name the folder it is located in, containing compatible data found in subfolders.
 - Explore root folder (folder from where the program was called)
 - Recursively explore sufolders, and resolve only for compatible file extensions
 - Generate unique NetCDF file at root folder lever.
