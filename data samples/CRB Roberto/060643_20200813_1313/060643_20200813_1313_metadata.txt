@@ -1,0 +1,89 @@
+{
+   "dataheader":[
+      {
+         "name":"Time",
+         "format":"yyyy-MM-dd HH:mm:ss.SSS",
+         "index":1
+      },
+      {
+         "name":"Conductivity",
+         "index":2,
+         "units":"mS/cm"
+      },
+      {
+         "name":"Temperature",
+         "index":3,
+         "units":"Degrees_C"
+      },
+      {
+         "name":"Pressure",
+         "index":4,
+         "units":"dbar"
+      },
+      {
+         "name":"Sea pressure",
+         "index":5,
+         "units":"dbar"
+      },
+      {
+         "name":"Depth",
+         "index":6,
+         "units":"m"
+      },
+      {
+         "name":"Salinity",
+         "index":7,
+         "units":"PSU"
+      },
+      {
+         "name":"Speed of sound",
+         "index":8,
+         "units":"m/s"
+      },
+      {
+         "name":"Specific conductivity",
+         "index":9,
+         "units":"uS/cm"
+      },
+      {
+         "name":"Density anomaly",
+         "index":10,
+         "units":"kg/m-3"
+      }
+   ],
+   "schedule":{
+      "loggertime":"2020-08-13 18:13:32.081",
+      "endtime":"2099-12-31 03:30:00.000",
+      "starttime":"2000-01-01 03:30:00.000"
+   },
+   "sampling":{
+      "mode":"CONTINUOUS",
+      "period":"500"
+   },
+   "comment":"",
+   "instrument":{
+      "fwversion":1.113,
+      "serial":60643,
+      "model":"RBRconcerto³",
+      "fwtype":104
+   },
+   "version":{
+      "file":"1.0.0",
+      "ruskin":"2.1.2"
+   },
+   "export":{
+      "exporttime":"2021-03-23 14:10:17.862",
+      "endtime":"2020-08-13 17:10:54.000",
+      "starttime":"2020-02-04 19:20:28.000"
+   },
+   "parameters":{
+      "altitude":0,
+      "salinity":35,
+      "spec_cond_coeff":0.0191,
+      "density":1.0260206,
+      "conductivity":42.914,
+      "temperature":15,
+      "pressure":10.1325,
+      "atmpressure":10.132501
+   }
+}
