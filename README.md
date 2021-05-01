@@ -16,6 +16,18 @@ A CFER-DFO project to convert historical Atlantic Coast CTD casts into a NetCDF 
 - convert date time to float date from 1900-01-01 00:00:00
 
 
+# Install executions
+- Preferably, createa a new virtualenv 
+- Ensure the following dependencies are installed
+	- netCDF4
+	- numpy
+	- pandas 
+- Move `__main__.py` to the appropriate destination (ie, `2001`)
+	- Preferably, make sure the folder containing data samples is named correctly (the name of the mission) as that is what they program wil use to create the subgroups
+- Execute the program
+- You should find a new file, named according to the folder that contains the program, with extension `.nc`
+
+
 ## Subgroup attributes
 - mission_id
 - lat/lon data

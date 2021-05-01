@@ -81,6 +81,7 @@ def concerto2ncfile(parameterFile):
 
     json_metadata = open(os.path.join(parameterFile['root_folder'], parameterFile['metadata']) )
     unpacked_metadata = json.load(json_metadata)
+    uniqueTrip.timestamp = unpacked_metadata['export']['starttime']
 
     for vars in unpacked_metadata['dataheader']:
         if vars['name'] == 'Time':
